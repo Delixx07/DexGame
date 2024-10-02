@@ -1,0 +1,167 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(bg.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  color: #e0e0e0; 
+}
+
+
+header {
+  background: linear-gradient(to right, rgb(15, 1, 103), rgb(27, 41, 90)); 
+  box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(153, 0, 255, 1);
+  padding: 5px 15px; 
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px; 
+  filter: drop-shadow(0 0 5px #4a90e2); 
+  position: relative;
+  top: 20px;
+}
+nav{
+  position: relative;
+  right: 180px;
+  font-size: larger;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0e0e0; 
+  margin-left: 30px;    
+  font-size: 18px; 
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4a90e2; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 28, 75);
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px 0; 
+}
+.dropdown-content a {
+  display: block; 
+  font-size: 15px;
+  color: white; 
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-align: left; 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.game-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, rgb(38, 0, 255), rgb(229, 156, 255)); 
+  color: transparent; 
+  background-clip: text; 
+  text-align: center;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center;
+  text-align: center;
+  background-color: #16213e90; 
+  border-radius: 10px;
+  width:400px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 50px; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: auto; 
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(74, 144, 226, 0.4);
+}
+
+.game-card img {
+  margin-top: -30px;
+  width: 120%; 
+  height: 170px;
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0; 
+}
+
+.game-card h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  background: linear-gradient(to right, rgb(103, 154, 255), rgb(255, 0, 157)); 
+  color: transparent; 
+  background-clip: text; 
+}
+.tt-bg{
+  background-image: url(tt.jpg);
+}
+.game-card p {
+  font-size: 16px;
+  color: #e0e0e0; 
+}
+
+.play-button {
+  background: linear-gradient(to right, rgb(15, 1, 103), rgb(27, 41, 90)); 
+  color: #e0e0e0; 
+  border: none;
+  padding: 10px 20px; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-size: 16px; 
+  text-decoration: none;
+  width: 200px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: auto; 
+}
+
+.play-button:hover {
+  background: #5e02df; 
+  transform: scale(1.05); 
+  color: #ffffff; 
+}
+

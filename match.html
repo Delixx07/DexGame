@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="match.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <nav id="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Games</a>
+                <div class="dropdown-content">
+                    <a href="tt.html">Tic-Tac-Toe</a>
+                    <a href="snake.html">Snake</a>
+                    <a href="match.html">Memory Match</a>
+                    <a href="#">Puzzle Game</a>
+                </div>
+            </div>
+            <a href="#">Leaderboard</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <div class="game">
+        <div class="controls">
+            <div class="stats">
+                <div class="timer">Time: 0 sec</div>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board" data-dimension="4"></div>
+            <div class="win" style="display: none;">
+                <span class="win-text">You won!<br />
+                    Time: <span class="highlight">0</span> seconds
+                </span>
+                <button id="tryAgainButton">Try Again</button>
+            </div>
+        </div>
+        <div class="overlay">
+            <button id="startButton">START GAME</button>
+        </div>
+    </div>
+    <script src="match.js" defer></script>
+</body>
+</html>

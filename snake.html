@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ 
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <nav id="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Games</a>
+                <div class="dropdown-content">
+                    <a href="tt.html">Tic-Tac-Toe</a>
+                    <a href="snake.html">Snake</a>
+                    <a href="match.html">Memory Match</a>
+                    <a href="#">Puzzle Game</a>
+                </div>
+            </div>
+            <a href="#">Leaderboard</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <h1>Snake Game</h1>
+    <canvas id="board"></canvas>
+
+   
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2 id="popup-message">Game Over</h2>
+            <p id="popup-score"></p> 
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+
+</html>

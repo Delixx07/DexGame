@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <nav id="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Games</a>
+                <div class="dropdown-content">
+                    <a href="tt.html">Tic-Tac-Toe</a>
+                    <a href="snake.html">Snake</a>
+                    <a href="match.html">Memory Match</a>
+                    <a href="#">Puzzle Game</a>
+                </div>
+            </div>
+            <a href="#">Leaderboard</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+
+    <section class="game-section">
+        <h1>Choose Your Game</h1>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="tt.jpg" alt="Tic Tac Toe" class="game-image">
+                <h3>Tic-Tac-Toe</h3>
+                <a href="tt.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="snake.jpg" alt="Snake" class="game-image">
+                <h3>Snake</h3>
+                <a href="snake.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="cardmem.jpeg" alt="Memory Match" class="game-image">
+                <h3>Memory Match</h3>
+                <a href="match.html" class="play-button">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="kamingsun.jpg" alt="Coming-Soon" class="game-image">
+                <h3>Coming Soon</h3>
+                <a href="#" class="play-button" onclick="openModal()">Not Available</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
